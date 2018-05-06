@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css"> <!--Had to reference style sheet before and after bootstrap link in order to keep both style and bootstrap style working-->
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-static">
+    <div class="container-fluid">
+      <div class="navbar-header"> 
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+          <a class="navbar-brand nav-style" href="web_visualization.html" style="color:white;margin-left:50px">
+            Latitude</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="max_temp.html">Max Temperature</a></li>
+                <li><a href="humidity.html">Humidity</a></li>
+                <li><a href="cloudiness.html">Cloudiness</a></li>   
+                <li><a href="wind_speed.html">Wind Speed</a></li>
+              </ul>        
+            </li>
+            <li><a href="comparison.html">Comparison</a></li> 
+            <li><a href="data.html">Data</a></li> 
+          </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Creating panes for page -->
+  <div class="container-fluid">
+    <div class="row">
+      <!--Left Pane for Summary-->
+      <div class="col-sm-7 panel" align="left">
+        <h2>Summary: Latitude vs. X</h2>
+        <hr>
+        <img class="portrait" src="images/max_temp.png" alt="...">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar cursus feugiat. Nulla eu eros rhoncus, tincidunt justo id, mollis leo. Nulla blandit porta ultricies. Nunc finibus sapien vestibulum molestie ultricies. Morbi sit amet condimentum neque, et tempus massa. Morbi dapibus mauris nec sodales fermentum. Curabitur convallis, ante eu rhoncus congue, neque urna posuere est, fermentum tempor tortor augue vel lectus. Quisque dictum eu arcu eget mattis. Donec rhoncus, est vel porttitor maximus, sem felis convallis dui, at placerat eros ligula sit amet lorem.Sed leo orci, tempus vel nisl nec, dapibus dictum mauris. Quisque sem massa, mattis eget magna sed, molestie vestibulum nunc. 
+        </p>
+      </div>
+      <!--Right pane for Visualizations-->
+      <div class="col-sm-4 panel">
+        <h2>Visualizations</h2>
+        <hr>
+        <div class="row">
+          <div class="col-sm-6 col-xs-3">
+            <a class="portrait" href="max_temp.html"><img src="images/max_temp.png" alt="..."></a>
+          </div>
+          <div class="col-sm-6 col-xs-3">
+              <a class="portrait" href="humidity.html"><img src="images/humidity.png" alt="..."></a>
+          </div>
+            <div class="col-sm-6 col-xs-3">
+              <a class="portrait" href="cloudiness.html"><img src="images/cloudiness.png" alt="..."></a>
+          </div>
+          <div class="col-sm-6 col-xs-3">
+              <a class="portrait" href="wind_speed.html"><img src="images/wind_speed.png" alt="..."></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+      <div class="footer_bar">
+        </div>
+      <p style="font-size:11px">@BennyFish</p>
+  </div>
+</body>
+
+</html>
